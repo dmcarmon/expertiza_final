@@ -18961,3 +18961,525 @@ Authorised? true
 Rendering template within layouts/application
 Rendering tree_display/list
 Completed in 1043ms (View: 557, DB: 287) | 200 OK [http://localhost/tree_display/list]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at C:/Users/DMC/Documents/GitHub/expertiza_final/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors
+
+
+Processing ContentPagesController#view_default (for 127.0.0.1 at 2012-12-03 14:17:34) [GET]
+  Parameters: {"action"=>"view_default", "controller"=>"content_pages"}
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view_default
+Completed in 10849ms (View: 113, DB: 269) | 200 OK [http://localhost/]
+
+
+Processing AuthController#login (for 127.0.0.1 at 2012-12-03 14:18:42) [POST]
+  Parameters: {"commit"=>"Login", "action"=>"login", "authenticity_token"=>"q2bnJ7kMHC/z31nJ6lou4s7mEZUStH09+ZwlEyrnCJE=", "controller"=>"auth", "login"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+(Role still current)
+Action: authorised
+Authorised? true
+Failed login attempt
+Redirected to http://localhost:3000/password_retrieval/forgotten
+Completed in 429ms (DB: 215) | 302 Found [http://localhost/auth/login]
+
+
+Processing PasswordRetrievalController#forgotten (for 127.0.0.1 at 2012-12-03 14:18:42) [GET]
+  Parameters: {"action"=>"forgotten", "controller"=>"password_retrieval"}
+(Role still current)
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering password_retrieval/forgotten
+Completed in 176ms (View: 20, DB: 41) | 200 OK [http://localhost/password_retrieval/forgotten]
+
+
+Processing ContentPagesController#view_default (for 127.0.0.1 at 2012-12-03 14:19:01) [GET]
+  Parameters: {"action"=>"view_default", "controller"=>"content_pages"}
+(Role still current)
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view_default
+Completed in 316ms (View: 29, DB: 63) | 200 OK [http://localhost/]
+
+
+Processing AuthController#login (for 127.0.0.1 at 2012-12-03 14:42:18) [POST]
+  Parameters: {"commit"=>"Login", "action"=>"login", "authenticity_token"=>"q2bnJ7kMHC/z31nJ6lou4s7mEZUStH09+ZwlEyrnCJE=", "controller"=>"auth", "login"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+(Role still current)
+Action: authorised
+Authorised? true
+User admin successfully logged in
+Logging in user as role Credentials
+Redirected to http://localhost:3000/tree_display/drill
+Completed in 226ms (DB: 105) | 302 Found [http://localhost/auth/login]
+
+
+Processing TreeDisplayController#drill (for 127.0.0.1 at 2012-12-03 14:42:18) [GET]
+  Parameters: {"action"=>"drill", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 139ms (DB: 38) | 302 Found [http://localhost/tree_display/drill]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 14:42:19) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 3435ms (View: 1840, DB: 1400) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing QuestionnaireController#new (for 127.0.0.1 at 2012-12-03 14:42:54) [GET]
+  Parameters: {"model"=>"ReviewQuestionnaire", "private"=>"0", "action"=>"new", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/new
+Completed in 249ms (View: 34, DB: 67) | 200 OK [http://localhost/questionnaire/new?model=ReviewQuestionnaire&private=0]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 14:42:58) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"q2bnJ7kMHC/z31nJ6lou4s7mEZUStH09+ZwlEyrnCJE=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 612ms (View: 293, DB: 210) | 200 OK [http://localhost/question/select_questionnaire_type]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2012-12-03 14:43:50) [GET]
+  Parameters: {"name"=>["manage", "questionnaires"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/goto_questionnaires
+Completed in 227ms (DB: 45) | 302 Found [http://localhost/menu/manage/questionnaires]
+
+
+Processing TreeDisplayController#goto_questionnaires (for 127.0.0.1 at 2012-12-03 14:43:51) [GET]
+  Parameters: {"action"=>"goto_questionnaires", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 1104ms (DB: 939) | 302 Found [http://localhost/tree_display/goto_questionnaires]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 14:43:52) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1058ms (View: 642, DB: 276) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing QuestionnaireController#edit (for 127.0.0.1 at 2012-12-03 14:44:01) [GET]
+  Parameters: {"action"=>"edit", "id"=>"237", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/edit
+Completed in 572ms (View: 246, DB: 171) | 200 OK [http://localhost/questionnaire/edit/237]
+
+
+Processing QuestionnaireController#new (for 127.0.0.1 at 2012-12-03 14:45:17) [GET]
+  Parameters: {"model"=>"ReviewQuestionnaire", "private"=>"0", "action"=>"new", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/new
+Completed in 232ms (View: 27, DB: 64) | 200 OK [http://localhost/questionnaire/new?model=ReviewQuestionnaire&private=0]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 14:45:22) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"q2bnJ7kMHC/z31nJ6lou4s7mEZUStH09+ZwlEyrnCJE=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 586ms (View: 228, DB: 136) | 200 OK [http://localhost/question/select_questionnaire_type]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2012-12-03 14:53:35) [GET]
+  Parameters: {"name"=>["manage", "questionnaires"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/goto_questionnaires
+Completed in 187ms (DB: 46) | 302 Found [http://localhost/menu/manage/questionnaires]
+
+
+Processing TreeDisplayController#goto_questionnaires (for 127.0.0.1 at 2012-12-03 14:53:35) [GET]
+  Parameters: {"action"=>"goto_questionnaires", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 284ms (DB: 70) | 302 Found [http://localhost/tree_display/goto_questionnaires]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 14:53:36) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1319ms (View: 614, DB: 544) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing QuestionnaireController#new (for 127.0.0.1 at 2012-12-03 14:53:40) [GET]
+  Parameters: {"model"=>"ReviewQuestionnaire", "private"=>"0", "action"=>"new", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/new
+Completed in 249ms (View: 27, DB: 74) | 200 OK [http://localhost/questionnaire/new?model=ReviewQuestionnaire&private=0]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 14:53:44) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"q2bnJ7kMHC/z31nJ6lou4s7mEZUStH09+ZwlEyrnCJE=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 616ms (View: 249, DB: 147) | 200 OK [http://localhost/question/select_questionnaire_type]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at C:/Users/DMC/Documents/GitHub/expertiza_final/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors
+
+
+Processing ContentPagesController#view_default (for 127.0.0.1 at 2012-12-03 19:24:53) [GET]
+  Parameters: {"action"=>"view_default", "controller"=>"content_pages"}
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view_default
+Completed in 10686ms (View: 103, DB: 225) | 200 OK [http://localhost/]
+
+
+Processing AuthController#login (for 127.0.0.1 at 2012-12-03 19:25:15) [POST]
+  Parameters: {"commit"=>"Login", "action"=>"login", "authenticity_token"=>"y+KW3kyqCrQmi9dMg6uVWHM7g4X1QTZ4Bhx74QDRZ9E=", "controller"=>"auth", "login"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+(Role still current)
+Action: authorised
+Authorised? true
+User admin successfully logged in
+Logging in user as role Credentials
+Redirected to http://localhost:3000/tree_display/drill
+Completed in 1109ms (DB: 865) | 302 Found [http://localhost/auth/login]
+
+
+Processing TreeDisplayController#drill (for 127.0.0.1 at 2012-12-03 19:25:16) [GET]
+  Parameters: {"action"=>"drill", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 140ms (DB: 57) | 302 Found [http://localhost/tree_display/drill]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 19:25:16) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 3837ms (View: 2887, DB: 753) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing QuestionnaireController#new (for 127.0.0.1 at 2012-12-03 19:25:27) [GET]
+  Parameters: {"model"=>"ReviewQuestionnaire", "private"=>"0", "action"=>"new", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/new
+Completed in 220ms (View: 57, DB: 40) | 200 OK [http://localhost/questionnaire/new?model=ReviewQuestionnaire&private=0]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:25:31) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"y+KW3kyqCrQmi9dMg6uVWHM7g4X1QTZ4Bhx74QDRZ9E=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 650ms (View: 259, DB: 283) | 200 OK [http://localhost/question/select_questionnaire_type]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:26:06) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"y+KW3kyqCrQmi9dMg6uVWHM7g4X1QTZ4Bhx74QDRZ9E=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 498ms (View: 212, DB: 113) | 200 OK [http://localhost/question/select_questionnaire_type]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:26:15) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"y+KW3kyqCrQmi9dMg6uVWHM7g4X1QTZ4Bhx74QDRZ9E=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 403ms (View: 200, DB: 109) | 200 OK [http://localhost/question/select_questionnaire_type]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:26:19) [GET]
+  Parameters: {"action"=>"select_questionnaire_type", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/questionnaire_controller.rb:156:in `select_questionnaire_type'
+  C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+  C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:26:22) [GET]
+  Parameters: {"action"=>"select_questionnaire_type", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/questionnaire_controller.rb:156:in `select_questionnaire_type'
+  C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/rack.rb:27:in `call'
+  C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContentPagesController#view (for 127.0.0.1 at 2012-12-03 19:26:29) [GET]
+  Parameters: {"action"=>"view", "page_name"=>["question", "new"], "controller"=>"content_pages"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+(Unknown page? questionnew)
+Redirected to http://localhost:3000/notfound
+Filter chain halted as [:goldberg_security_filter] rendered_or_redirected.
+Completed in 164ms (DB: 45) | 302 Found [http://localhost/question/new]
+
+
+Processing ContentPagesController#view (for 127.0.0.1 at 2012-12-03 19:26:29) [GET]
+  Parameters: {"action"=>"view", "page_name"=>["notfound"], "controller"=>"content_pages"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Page: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view
+Completed in 289ms (View: 27, DB: 48) | 200 OK [http://localhost/notfound]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2012-12-03 19:26:34) [GET]
+  Parameters: {"name"=>["manage", "questionnaires", "review rubrics"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/goto_review_rubrics
+Completed in 116ms (DB: 39) | 302 Found [http://localhost/menu/manage/questionnaires/review%20rubrics]
+
+
+Processing TreeDisplayController#goto_review_rubrics (for 127.0.0.1 at 2012-12-03 19:26:34) [GET]
+  Parameters: {"action"=>"goto_review_rubrics", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 205ms (DB: 69) | 302 Found [http://localhost/tree_display/goto_review_rubrics]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 19:26:35) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 788ms (View: 369, DB: 273) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing TreeDisplayController#drill (for 127.0.0.1 at 2012-12-03 19:26:39) [GET]
+  Parameters: {"action"=>"drill", "root"=>"1", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 242ms (DB: 82) | 302 Found [http://localhost/tree_display/drill?root=1]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 19:26:39) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1042ms (View: 635, DB: 282) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing QuestionnaireController#new (for 127.0.0.1 at 2012-12-03 19:26:43) [GET]
+  Parameters: {"model"=>"ReviewQuestionnaire", "private"=>"0", "action"=>"new", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/new
+Completed in 157ms (View: 20, DB: 42) | 200 OK [http://localhost/questionnaire/new?model=ReviewQuestionnaire&private=0]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:26:46) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"y+KW3kyqCrQmi9dMg6uVWHM7g4X1QTZ4Bhx74QDRZ9E=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 625ms (View: 199, DB: 258) | 200 OK [http://localhost/question/select_questionnaire_type]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2012-12-03 19:27:45) [GET]
+  Parameters: {"name"=>["manage", "questionnaires"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/goto_questionnaires
+Completed in 121ms (DB: 37) | 302 Found [http://localhost/menu/manage/questionnaires]
+
+
+Processing TreeDisplayController#goto_questionnaires (for 127.0.0.1 at 2012-12-03 19:27:45) [GET]
+  Parameters: {"action"=>"goto_questionnaires", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 171ms (DB: 55) | 302 Found [http://localhost/tree_display/goto_questionnaires]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2012-12-03 19:27:46) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1029ms (View: 612, DB: 290) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing QuestionnaireController#new (for 127.0.0.1 at 2012-12-03 19:27:49) [GET]
+  Parameters: {"model"=>"ReviewQuestionnaire", "private"=>"0", "action"=>"new", "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/new
+Completed in 179ms (View: 19, DB: 44) | 200 OK [http://localhost/questionnaire/new?model=ReviewQuestionnaire&private=0]
+
+
+Processing QuestionnaireController#select_questionnaire_type (for 127.0.0.1 at 2012-12-03 19:27:55) [POST]
+  Parameters: {"select_questionnaire_type"=>"Select", "action"=>"select_questionnaire_type", "authenticity_token"=>"y+KW3kyqCrQmi9dMg6uVWHM7g4X1QTZ4Bhx74QDRZ9E=", "questionnaire"=>{"section"=>"Custom", "display_type"=>"Review", "private"=>"0", "id"=>"", "type"=>"ReviewQuestionnaire", "max_question_score"=>"5", "min_question_score"=>"0"}, "controller"=>"questionnaire"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering questionnaire/select_questionnaire_type
+Completed in 408ms (View: 217, DB: 100) | 200 OK [http://localhost/question/select_questionnaire_type]
